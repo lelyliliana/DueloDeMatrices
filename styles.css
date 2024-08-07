@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#matrix-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #fff;
+    
+    transition: background-color 0.3s; /* Para un efecto de transición suave */
+}
+
+#team-scores {
+    display: flex;
+    justify-content: center;
+}
+
+.team-score {
+    margin: 0 15px;
+}
+
+.score-button {
+    display: block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.score-button.negative {
+    background-color: #dc3545;
+}
+
+.team-points {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#team-scores {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas con fracciones iguales del espacio disponible */
+    gap: 5px; /* Espacio entre las columnas */
+    justify-content: center; /* Centra el contenido en el contenedor */
+    align-items: center; /* Alinea verticalmente */
+}
+
+.team-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Elimina cualquier margen por defecto */
+}
+
+.cell.selected {
+    background-color: #ff69b4 !important; /* Color rosa para la casilla seleccionada */
+}
+
+.adjacent {
+    background-color: #add8e6; /* Tono de azul más claro para las casillas adyacentes */
+}
+
+.used {
+    background-color: grey; /* Define el color gris para las casillas usadas */
+    pointer-events: none; /* Deshabilita eventos de clic */
+    cursor: default; /* Cambia el cursor a default para indicar que no es clickeable */
+}
+
+.question-container {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none; /* Inicialmente oculto */
+}
+
+.question-text {
+    border: 1px solid #000;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: 100px; /* Ajusta según necesidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Hace el texto en negrita */
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.timer-button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.question-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos adicionales para ajustar la responsividad o diseño específico */
+
+/* Agregar estilos adicionales según sea necesario */
+

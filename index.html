@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo de Matrices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Duelo de Matrices</h1>
+    <div id="matrix-board">
+        <!-- Casillas de la matriz -->
+        <!-- Estas casillas se generan dinámicamente con JavaScript -->
+
+    </div>
+    <div id="team-scores">
+        <!-- Marcadores de los equipos -->
+        <!-- Estos marcadores se generan dinámicamente con JavaScript -->
+    </div>
+    
+<div id="question-container" class="question-container">
+    <h2><span id="question-points">100</span> puntos</h2>
+    <div id="timer">
+        Tiempo: <span id="timer-minutes">00:00</span>
+        <button class="timer-button" id="increment-timer">+</button>
+        <button class="timer-button" id="decrement-timer">-</button>
+        <button id="start-timer" class="timer-button">Cronómetro</button>
+    </div>
+    <div id="question-text" class="question-text">Aquí iría la pregunta ...</div>
+    <button id="show-answer" class="question-button">Ver respuesta</button>
+    <button id="continue-playing" class="question-button">Seguir jugando</button>
+</div>
+
+
+    <script src="preguntas.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
